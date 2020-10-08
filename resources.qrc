@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="/plugins/geo_value_functions">
+    <file>img/a1.PNG</file>
+    <file>img/a2.PNG</file>
+    <file>img/a3.PNG</file>
+    <file>img/a4.PNG</file>
+    <file>img/d1.PNG</file>
+    <file>img/d2.PNG</file>
+    <file>img/d3.PNG</file>
+    <file>img/d4.PNG</file>
+    <file>img/n1.PNG</file>
+    <file>img/n2.PNG</file>
+    <file>img/ylorpr.PNG</file>
+    <file>img/brylgr.PNG</file>
+    <file>img/rdylgr.PNG</file>
+    <file>img/ylrd.PNG</file>
+    <file>img/logistic.png</file>
+  </qresource>
+</RCC>
