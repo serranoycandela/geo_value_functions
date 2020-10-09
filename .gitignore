@@ -9,3 +9,4 @@
 *.zip
 *.spec
 *.xlsx
+__pycache__
