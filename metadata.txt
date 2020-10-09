@@ -1,7 +1,7 @@
-# This file contains metadata for your plugin. Since 
-# version 2.0 of QGIS this is the proper way to supply 
-# information about a plugin. The old method of 
-# embedding metadata in __init__.py will 
+# This file contains metadata for your plugin. Since
+# version 2.0 of QGIS this is the proper way to supply
+# information about a plugin. The old method of
+# embedding metadata in __init__.py will
 # is no longer supported since version 2.0.
 
 # This file should be included when you package your plugin.# Mandatory items:
@@ -9,15 +9,15 @@
 [general]
 name=Geo value functions
 qgisMinimumVersion=3.0
-description=Allows to apply a function to a raster or vector layer.
+description=It allows to apply a function from a wide selection, to transform cartographic data into a layer with meaning. This technic is used in the context of Indexes composed by several criteria (for example when working with AHP or ANP or making vulnerability indexes). It helps to get all layers involved in values between 0 and 1, so the aggregation of criteria can be done. Is recommended to use it as a facilitator tool to extract the knowledge from experts in a certain topic.
 version=0.1
 author=LANCIS
 email=serranoycandela@gmail.com
 
-about=Provide a brief description of the plugin and its purpose.
+about=It allows to apply a function from a wide selection, to transform cartographic data into a layer with meaning. This technic is used in the context of Indexes composed by several criteria (for example when working with AHP or ANP or making vulnerability indexes). It helps to get all layers involved in values between 0 and 1, so the aggregation of criteria can be done. Is recommended to use it as a facilitator tool to extract the knowledge from experts in a certain topic.
 
-tracker=http://bugs
-repository=http://repo
+tracker=https://github.com/serranoycandela/geo_value_functions/issues
+repository=https://github.com/serranoycandela/geo_value_functions
 # End of mandatory metadata
 
 # Recommended items:
@@ -28,7 +28,7 @@ repository=http://repo
 # Tags are comma separated with spaces allowed
 tags=python
 
-homepage=http://homepage
+homepage=https://github.com/serranoycandela/geo_value_functions
 category=Plugins
 icon=icon.png
 # experimental flag
@@ -36,4 +36,3 @@ experimental=True
 
 # deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
-
