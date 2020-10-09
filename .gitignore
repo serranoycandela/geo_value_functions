@@ -1,0 +1,11 @@
+
+*.pkg
+*.pyc
+*.toc
+*.txt
+*.html
+*.manifest
+*.pyz
+*.zip
+*.spec
+*.xlsx
