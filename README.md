@@ -5,6 +5,6 @@ It allows to apply a function from a wide selection, to transform cartographic d
 
 <img src="/gvf_qgis4.PNG" width="600px">
 
-The parameters of the functions were adjusted to be small numbers for the purpose of using this tool in participatory workshops. The actual formulas used in transformation are displayed below graph and exported in a json file when results is saved.
+The parameters of the functions were adjusted to be small numbers for the purpose of using this tool in participatory workshops. The actual formulas used in transformation are displayed below graph and exported in a json file when the results are saved.
 
 <img src="/gvf_qgis3.PNG" width="600px">
