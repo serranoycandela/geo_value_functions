@@ -1,7 +1,7 @@
 
 # Geo Value Funtions Plugin for QGIS
 
-With this plugin you may apply a wide selection of functions to cartographic layers in order to transform its data into meaning. This technique is used in the context of Indexes composed by several criteria (for example when working with AHP or ANP or making vulnerability indexes). The plugin scales all layers involved into values between 0 and 1, so criteria may be aggregated. This tool is useful for mapping knowledge from different experts.
+With this plugin you may apply a wide selection of functions to cartographic layers in order to transform its data into meaning. This technique is used in the context of Indexes composed by several criteria (for example when working with Analytic Hierarchy Process or Analytic Network Process or when making vulnerability indexes). The plugin scales all layers involved into values between 0 and 1, so criteria may be aggregated. This tool is useful for mapping knowledge from different experts.
 
 <img src="/gvf_qgis4.PNG" width="600px">
 
