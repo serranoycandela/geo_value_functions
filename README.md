@@ -13,7 +13,9 @@ Parameters of the functions are adjusted to small numbers for easier use in part
 # Acknowledgment
 
 Author: Fidel Serrano Candela
+
 Área de Planeación Colaborativa, Laboratorio Nacional de Ciencias de la Sostenibilidad, Instituto de Ecología, Universidad Nacional Autónoma de México
+
 Acknowledgment: This work was made with funding from "Programa de Apoyo a Proyectos de Investigación e Innovación Tecnológica (PAPIIT IV100118) del proyecto Análisis integrado de sistemas socio-ambientales acoplados: desarrollo de capacidades para la evaluación de la vulnerabilidad costera."
 
 
