@@ -229,8 +229,8 @@ class geo_value_functions:
         #print "** CLOSING geo_value_functions"
 
         # disconnects
-        self.dockwidget.closingPlugin.disconnect(self.onClosePlugin)
-
+        #self.dockwidget.closingPlugin.disconnect(self.onClosePlugin)
+        self.dockwidget = None
         # remove this statement if dockwidget is to remain
         # for reuse if plugin is reopened
         # Commented next statement since it causes QGIS crashe
@@ -1276,6 +1276,7 @@ class geo_value_functions:
                 self.dockwidget.pushButton_4.setEnabled(True)
 
 
+
     def run(self):
         """Run method that loads and starts the plugin"""
 
@@ -1357,6 +1358,5 @@ class geo_value_functions:
             self.dockwidget.saveResult.clicked.connect(self.handleSaveResult)
             self.dockwidget.pushButton_4.clicked.connect(self.handleSaveResultHere)
             self.dockwidget.tabWidget.currentChanged.connect(self.tabChanged)
-
             self.dockwidget.show()
             #self.getLayerRange()
