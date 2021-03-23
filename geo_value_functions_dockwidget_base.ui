@@ -6,14 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>461</width>
-    <height>903</height>
+    <width>455</width>
+    <height>844</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>455</width>
+    <height>672</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>455</width>
+    <height>524287</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Geo value functions</string>
   </property>
   <widget class="QWidget" name="dockWidgetContents">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <property name="minimumSize">
     <size>
      <width>450</width>
@@ -60,7 +78,7 @@
              <x>0</x>
              <y>0</y>
              <width>400</width>
-             <height>817</height>
+             <height>758</height>
             </rect>
            </property>
            <property name="minimumSize">
@@ -81,7 +99,7 @@
               <x>9</x>
               <y>9</y>
               <width>381</width>
-              <height>811</height>
+              <height>750</height>
              </rect>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout">
@@ -136,7 +154,7 @@
                      <height>0</height>
                     </size>
                    </property>
-                   <property name="allowEmptyLayer">
+                   <property name="allowEmptyLayer" stdset="0">
                     <bool>true</bool>
                    </property>
                   </widget>
@@ -290,13 +308,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -337,13 +355,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -372,13 +390,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -419,13 +437,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -464,13 +482,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -511,13 +529,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="sizeIncrement">
@@ -561,13 +579,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -608,13 +626,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -653,13 +671,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -700,13 +718,13 @@
                  <property name="minimumSize">
                   <size>
                    <width>175</width>
-                   <height>100</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
                    <width>260</width>
-                   <height>260</height>
+                   <height>108</height>
                   </size>
                  </property>
                  <property name="text">
@@ -753,17 +771,17 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>417</width>
-             <height>817</height>
+             <width>406</width>
+             <height>758</height>
             </rect>
            </property>
-           <widget class="QWidget" name="">
+           <widget class="QWidget" name="layoutWidget">
             <property name="geometry">
              <rect>
               <x>3</x>
               <y>14</y>
               <width>411</width>
-              <height>791</height>
+              <height>731</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_2">
@@ -1344,7 +1362,7 @@
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
-               <widget class="QWidget" name="">
+               <widget class="QWidget" name="layoutWidget">
                 <property name="geometry">
                  <rect>
                   <x>0</x>
@@ -1361,13 +1379,13 @@
                    </property>
                    <property name="minimumSize">
                     <size>
-                     <width>200</width>
+                     <width>195</width>
                      <height>0</height>
                     </size>
                    </property>
                    <property name="maximumSize">
                     <size>
-                     <width>16777215</width>
+                     <width>265</width>
                      <height>25</height>
                     </size>
                    </property>

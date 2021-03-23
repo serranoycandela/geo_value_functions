@@ -23,7 +23,7 @@
 """
 from PyQt5.QtCore import QSettings, QTranslator, qVersion, QCoreApplication, Qt, QVariant
 from PyQt5.QtGui import QIcon, QPixmap
-from PyQt5.QtWidgets import QAction, QWidget, QMessageBox
+from PyQt5.QtWidgets import QAction, QWidget, QMessageBox, QFileDialog
 from PyQt5.QtSvg import QSvgWidget
 # Initialize Qt resources from file resources.py
 from .resources import *
@@ -1172,6 +1172,18 @@ class geo_value_functions:
         self.setRamp()
         self.apply_function()
 
+    def handleSaveResultHere(self):
+        if self.isVector(self.layer):
+            print("path")
+        else:
+            self.layer_path, _ = QFileDialog.getSaveFileName(self.dockwidget, "Save to file", self.layer_path, filter='Tiff (*.tif)')
+
+            if self.layer_path != '':
+                #print(self.layer_path)
+                self.dockwidget.layer_path.setText("..."+self.layer_path[-40:])
+                self.dockwidget.layer_path.setToolTip(self.layer_path)
+                self.handleSaveResult()
+
     def handleSaveResult(self):
         if self.isVector(self.layer):
             #guardar en el field
@@ -1239,6 +1251,29 @@ class geo_value_functions:
             f.write('"python_code": "'+python_formula+'"\n')
             f.write("}")
             f.close()
+
+    def tabChanged(self):
+        """
+        Handles the current tab being changed
+        """
+        print(self.dockwidget.tabWidget.currentWidget().objectName())
+        if self.dockwidget.tabWidget.currentWidget().objectName() == "tab_2":
+            if self.isVector(self.layer):
+                self.dockwidget.saveResult.setText("Result Field")
+                self.layer_path = os.path.join(self.layer_dir,self.layer_name.split("|")[0])
+                field = str(self.dockwidget.mFieldComboBox.currentField())
+                self.tex_path = os.path.join(self.layer_dir,self.dockwidget.prefix.text()+field+"_"+self.layer_name.split(".")[0]+".tex")
+                self.json_path = os.path.join(self.layer_dir,self.dockwidget.prefix.text()+field+"_"+self.layer_name.split(".")[0]+".json")
+                self.dockwidget.pushButton_4.setEnabled(False)
+            else:
+                self.dockwidget.saveResult.setText("Result Layer")
+                base_path = os.path.join(self.layer_dir,self.dockwidget.prefix.text()+self.layer_name.split(".")[0])
+                self.layer_path = base_path + ".tif"
+                self.tex_path = base_path + ".tex"
+                self.json_path = base_path + ".json"
+                self.dockwidget.layer_path.setText("..."+self.layer_path[-40:])
+                self.dockwidget.layer_path.setToolTip(self.layer_path)
+                self.dockwidget.pushButton_4.setEnabled(True)
 
 
     def run(self):
@@ -1320,8 +1355,8 @@ class geo_value_functions:
             self.dockwidget.colorRampChooser.currentTextChanged.connect(self.handleRampChanged)
             self.dockwidget.invertBox.stateChanged.connect(self.handleInvertRamp)
             self.dockwidget.saveResult.clicked.connect(self.handleSaveResult)
-
-
+            self.dockwidget.pushButton_4.clicked.connect(self.handleSaveResultHere)
+            self.dockwidget.tabWidget.currentChanged.connect(self.tabChanged)
 
             self.dockwidget.show()
             #self.getLayerRange()
