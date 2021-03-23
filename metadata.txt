@@ -9,13 +9,12 @@
 [general]
 name=Geo value functions
 qgisMinimumVersion=3.0
-description=It allows to apply a function from a wide selection, to transform cartographic data into a layer with meaning. This technic is used in the context of Indexes composed by several criteria (for example when working with AHP or ANP or making vulnerability indexes). It helps to get all layers involved in values between 0 and 1, so the aggregation of criteria can be done. Is recommended to use it as a facilitator tool to extract the knowledge from experts in a certain topic.
-version=0.1
-author=LANCIS
+description=Apply a wide selection of functions to cartographic layers.
+version=0.2
+author=Fidel Serrano Candela
 email=serranoycandela@gmail.com
 
-about=It allows to apply a function from a wide selection, to transform cartographic data into a layer with meaning. This technic is used in the context of Indexes composed by several criteria (for example when working with AHP or ANP or making vulnerability indexes). It helps to get all layers involved in values between 0 and 1, so the aggregation of criteria can be done. Is recommended to use it as a facilitator tool to extract the knowledge from experts in a certain topic.
-
+about=With this plugin you may apply a wide selection of functions to cartographic layers in order to transform its data into meaning. This technique is used in the context of Indexes composed by several criteria (for example when working with Analytic Hierarchy Process or Analytic Network Process or when making vulnerability indexes). The plugin scales all layers involved into values between 0 and 1, so criteria may be aggregated. This tool is useful for eliciting knowledge from different experts. Fidel Serrano Candela, Laboratorio Nacional de Ciencias de la Sostenibilidad, Instituto de Ecología, Universidad Nacional Autónoma de México 
 tracker=https://github.com/serranoycandela/geo_value_functions/issues
 repository=https://github.com/serranoycandela/geo_value_functions
 # End of mandatory metadata
